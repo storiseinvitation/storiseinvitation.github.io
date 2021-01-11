@@ -1,0 +1,262 @@
+/*Navbar */
+/*
+.navbar{
+    position: relative;
+    z-index: 1;
+}
+.navbar-brand{
+    font-family: Quicksand;
+    font-size: 32px;
+}
+
+.nav-link{
+    margin-right: 30px;
+}
+*/
+/*Akhir Navbar */
+html {
+    scroll-behavior:smooth;
+  }
+/*Jumbotron */
+.jumbotron{
+    background-image: url(img/wedding.jpg);
+    background-size: cover;
+    height: 660px;
+    text-align: center;
+    position: relative;
+}
+
+.jumbotron .container{
+    z-index: 1;
+    position: relative;
+}
+.jumbotron::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 80%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0px;
+}
+.jumbotron .display-4{
+    color: white;
+    margin-top: 200px;
+    font-size: 35px;
+}
+.display-5{
+    color: white;
+    font-family: Quicksand;
+    font-size: 55px;
+    text-shadow: 1px 1px 1px rgba(0,0,0, 0.7);
+    margin-bottom: 30px;
+}
+.hitung-mundur{
+    font-size: 25px;
+    font-family: Quicksand;
+    color: white;
+    margin-left: 40px;
+    margin-top: 80px;
+}
+.hitung-mundur p{
+    margin-left: 10px;
+}
+
+/*Akhir Jumbotron */
+
+/*Sambutan*/
+.sambutan h4{
+    font-family: Quicksand;
+    font-weight: bold;
+}
+.sambutan .bismillah {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Quicksand;
+}
+.sambutan p{
+    font-family: Quicksand;
+}
+/*Akhir Sambutan*/
+
+.penutup{
+    margin-top: 20px;
+    font-family: Quicksand;
+}
+.penutup .salampenutup, .salampembuka{
+    font-weight: bold;
+    font-family: Quicksand;
+}
+
+/*Protocol Covid */
+.protocol-covid{
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    font-family: Quicksand;
+    margin-top: 100px;
+}
+
+.masker{
+    margin-left: 80px;
+}
+
+.cuci{
+    margin-left: 80px;
+}
+
+.jarak{
+    margin-left: 80px;
+}
+
+.protocol-covid img{
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.protocol-covid h4{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.protocol-covid p{
+    font-size: 14px;
+    color: #ACACAC;
+    margin-top: -5px;
+    font-weight: 200px;
+}
+/*Akhir Protocol Covid */
+
+/* Resepsi*/
+.mempelai{
+    margin-top: 20px;
+    text-align: center;
+    font-family: Quicksand;
+}
+.mempelai img{
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    margin-top: -30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mempelai h3{
+    font-size: 30px;
+    margin-top: 40px;
+    font-weight: 200;
+    text-transform: uppercase;
+    
+}
+
+.mempelai p{
+    font-size: 14px;
+    color: #ACACAC;
+    margin: 10px 0;
+    
+}
+/* Akhir Resepsi*/
+
+/*Galeri Foto*/
+.galeri{
+    margin-top: 80px;
+    font-family: Quicksand;
+    
+}
+.galeri .col-lg-6 img{
+    margin-top: 30px;
+}
+/*Akhir Galeri Foto*/
+
+/* Doa*/
+.doa{
+    margin-top: 100px;
+}
+.doa h5{
+    text-align: center;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 20px;
+}
+.doa p{
+    text-align: center;
+    font-weight: 200;
+    font-size: 15px;
+    font-family: Quicksand;
+}
+/* Penutup Doa*/
+
+/*Footter*/
+.footer{
+    margin-top: 30px;
+    font-family: Quicksand;
+}
+.footer p{
+    color: #ACACAC;
+    font-size: 15px;
+}
+/*Akhir Footer*/
+
+.kehadiran{
+    text-align: center;
+    font-family: Quicksand;
+}
+.audio{
+    width: 70%;
+}
+
+/*Dekstop Version */
+@media (min-width: 992px){
+    .navbar-brand, .nav-link{
+        color: white !important;
+    }
+
+    .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0b63dc;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .jumbotron{
+        margin-top: -85px;
+        height: 860px;
+    }
+
+    
+    .jumbotron .display-4{
+        margin-top: 200px;
+        font-size: 65px;
+    }
+
+    .jumbotron .display-5{
+        font-size: 100px;
+    }
+
+    .doa h5{
+        font-size: 25px;
+    }
+    .hitung-mundur{
+        font-size: 35px;
+        font-family: Quicksand;
+        color: white;
+        margin-left: 320px;
+        margin-top: 100px;
+    }
+    .hitung-mundur p{
+        margin-left: 30px;
+    }
+}
+
+/*Tambahan */
+.tombol{
+    border-radius: 40px;
+    text-transform: uppercase;
+    font-family: Quicksand;
+}
+.heart{
+    color:#e25555;
+}
+/*Akhir Tambahan */
